@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -47,6 +48,24 @@ export default function Home() {
           >
             Read our docs
           </a>
+        </div>
+
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-8">Welcome to Our App</h1>
+          <div className="space-x-4">
+            <Link
+              href="/signup"
+              className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            >
+              Sign Up
+            </Link>
+            <Link
+              href="/login"
+              className="inline-block bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+            >
+              Login
+            </Link>
+          </div>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
